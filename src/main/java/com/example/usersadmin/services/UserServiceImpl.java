@@ -8,6 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.example.usersadmin.exceptions.EmailInvalidException;
+import com.example.usersadmin.exceptions.PasswordInvalidException;
 import com.example.usersadmin.models.PhoneModel;
 import com.example.usersadmin.models.UserModel;
 import com.example.usersadmin.repositories.PhoneRepository;
@@ -38,7 +39,7 @@ public class UserServiceImpl implements UserService {
 			throw new EmailInvalidException("Invalid email address format");
 		}
 		if (!Validator.validatePassword(userModel.getPassword())) {
-			throw new Exception("Invalid password requirements");
+			throw new PasswordInvalidException("Invalid password requirements");
 		}
 		List<PhoneModel> userPhones = userModel.getPhones();
 		if (userPhones != null) {
