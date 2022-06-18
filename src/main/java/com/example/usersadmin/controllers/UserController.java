@@ -1,7 +1,9 @@
 package com.example.usersadmin.controllers;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 import java.util.UUID;
 import java.util.stream.Collectors;
 
@@ -64,16 +66,18 @@ public class UserController {
 	}
 
 	@PutMapping("/{id}")
-	public ResponseEntity<UserResponseDTO> updateUser(@PathVariable UUID id,
-			@RequestBody UserRequestDTO userRequestDTO) {
-		UserModel userRequest = modelMapper.map(userRequestDTO, UserModel.class);
-		UserResponseDTO userResponse = modelMapper.map(userService.updateUser(id, userRequest), UserResponseDTO.class);
+	public ResponseEntity<UserResponseDTO> updateUser(@PathVariable UUID id, @RequestBody UserRequestDTO userRequestDTO)
+			throws Exception {
+		UserModel userModel = modelMapper.map(userRequestDTO, UserModel.class);
+		UserResponseDTO userResponse = modelMapper.map(userService.updateUser(id, userModel), UserResponseDTO.class);
 		return ResponseEntity.ok().body(userResponse);
 	}
 
 	@DeleteMapping("/{id}")
-	public ResponseEntity<String> deleteUser(@PathVariable UUID id) {
+	public ResponseEntity<Map<String, String>> deleteUser(@PathVariable UUID id) throws Exception {
 		userService.deleteUser(id);
-		return new ResponseEntity<String>("deleted", HttpStatus.OK);
+		Map<String, String> response = new HashMap<>();
+		response.put("message", "User with id: " + id + " successfuly deleted");
+		return new ResponseEntity<Map<String, String>>(response, HttpStatus.OK);
 	}
 }

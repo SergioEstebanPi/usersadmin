@@ -11,8 +11,8 @@ public interface UserService {
 
 	public UserModel saveUser(UserModel userModel) throws Exception;
 
-	public UserModel updateUser(UUID id, UserModel userModel);
+	public UserModel updateUser(UUID id, UserModel userModel) throws Exception;
 
-	public void deleteUser(UUID id);
+	public void deleteUser(UUID id) throws Exception;
 
 }
