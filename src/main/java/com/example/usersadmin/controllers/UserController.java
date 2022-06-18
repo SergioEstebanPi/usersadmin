@@ -25,7 +25,7 @@ import com.example.usersadmin.config.JwtTokenUtil;
 import com.example.usersadmin.dto.UserRequestDTO;
 import com.example.usersadmin.dto.UserResponseDTO;
 import com.example.usersadmin.models.UserModel;
-import com.example.usersadmin.services.UserServiceImpl;
+import com.example.usersadmin.services.UserService;
 
 @RequestMapping("/users")
 @RestController
@@ -33,7 +33,7 @@ import com.example.usersadmin.services.UserServiceImpl;
 public class UserController {
 
 	@Autowired
-	UserServiceImpl userService;
+	UserService userService;
 
 	@Autowired
 	private ModelMapper modelMapper;
@@ -57,9 +57,9 @@ public class UserController {
 	public ResponseEntity<UserResponseDTO> createUser(@RequestBody UserRequestDTO userRequestDTO) throws Exception {
 		final UserDetails userDetails = new User(userRequestDTO.getEmail(), userRequestDTO.getPassword(),
 				new ArrayList<>());
-		UserModel userRequest = modelMapper.map(userRequestDTO, UserModel.class);
-		userRequest.setToken(jwtTokenUtil.generateToken(userDetails));
-		UserResponseDTO userResponse = modelMapper.map(userService.saveUser(userRequest), UserResponseDTO.class);
+		UserModel userModel = modelMapper.map(userRequestDTO, UserModel.class);
+		userModel.setToken(jwtTokenUtil.generateToken(userDetails));
+		UserResponseDTO userResponse = modelMapper.map(userService.saveUser(userModel), UserResponseDTO.class);
 		return new ResponseEntity<UserResponseDTO>(userResponse, HttpStatus.CREATED);
 	}
 
