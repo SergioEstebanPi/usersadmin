@@ -1,18 +1,24 @@
 # USERS ADMINISTRATOR
-## API RESTful de creación de usuarios
+## API RESTful to manage the users creation
 
 #
-### Requisitos:
+### Requirements:
 	Git, Java 1.8, SpringBoot, Maven or Gradle
 
 #
-### Repositorio Github: 
+### Github repository: 
 https://github.com/SergioEstebanPi/usersadmin
 
 ### Swagger URL: 
-http://localhost:8080/swagger-ui.html#!/user45controller/createUserUsingPOST
+http://localhost:8080/swagger-ui.html
+
+### H2 database: 
+http://localhost:8080/h2-console/
 
 #
+
+# Project structure:
+![alt text](estructura.png)
 
 ### Postman requests collection
 [users.postman_collection.json](users.postman_collection.json)
