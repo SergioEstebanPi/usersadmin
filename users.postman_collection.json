@@ -30,7 +30,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"name\": \"user\",\r\n    \"email\": \"user2@hotmail.com\",\r\n    \"password\": \"Hello world$123\",\r\n    \"token\": \"123456\",\r\n    \"phones\": [\r\n            {\r\n            \"number\": \"311111223\",\r\n            \"cityCode\": \"1\",\r\n            \"countryCode\": \"COP\",\r\n            \"createdAt\": \"2012-04-23\",\r\n            \"createdBy\": \"admin\",\r\n            \"modifiedAt\": \"null\",\r\n            \"modifiedBy\": null\r\n            }\r\n    ],\r\n    \"isActive\": true,\r\n    \"createdAt\": \"2012-04-23T18:25:43.511Z\",\r\n    \"createdBy\": \"admin\"\r\n}",
+					"raw": "{\r\n    \"name\": \"user\",\r\n    \"email\": \"user2@hotmail.com\",\r\n    \"password\": \"Hello world$123\",\r\n    \"phones\": [\r\n        {\r\n        \"number\": \"311111223\",\r\n        \"cityCode\": \"1\",\r\n        \"countryCode\": \"COP\"\r\n        }\r\n    ]\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -57,7 +57,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"name\": \"user000\",\r\n    \"email\": \"user2@hotmail.com\",\r\n    \"password\": \"Hello world$123\",\r\n    \"token\": \"123456\",\r\n    \"phones\": [\r\n            {\r\n            \"number\": \"3111112666\",\r\n            \"cityCode\": \"1\",\r\n            \"countryCode\": \"COP\",\r\n            \"createdAt\": \"2012-04-23\",\r\n            \"createdBy\": \"admin\",\r\n            \"modifiedAt\": \"null\",\r\n            \"modifiedBy\": null\r\n            }\r\n    ],\r\n    \"isActive\": true,\r\n    \"createdAt\": \"2012-04-23T18:25:43.511Z\",\r\n    \"createdBy\": \"admin\"\r\n}",
+					"raw": "{\r\n    \"name\": \"user000\",\r\n    \"email\": \"user2@hotmail.com\",\r\n    \"password\": \"Hello world$123\",\r\n    \"phones\": [\r\n        {\r\n        \"number\": \"3111112666\",\r\n        \"cityCode\": \"1\",\r\n        \"countryCode\": \"COP\"\r\n        }\r\n    ]\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -65,14 +65,14 @@
 					}
 				},
 				"url": {
-					"raw": "localhost:8080/users/31cca778-ef5c-40ac-91ca-d3d4b6fcc8ee",
+					"raw": "localhost:8080/users/56a09ef2-4b8a-48b0-8d83-17b3c1970f26",
 					"host": [
 						"localhost"
 					],
 					"port": "8080",
 					"path": [
 						"users",
-						"31cca778-ef5c-40ac-91ca-d3d4b6fcc8ee"
+						"56a09ef2-4b8a-48b0-8d83-17b3c1970f26"
 					]
 				}
 			},
