@@ -30,7 +30,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"name\": \"user\",\r\n    \"email\": \"user@hotmail.com\",\r\n    \"password\": \"Hello world$123\",\r\n    \"token\": \"123456\",\r\n    \"isActive\": true,\r\n    \"createdAt\": \"2012-04-23T18:25:43.511Z\",\r\n    \"createdBy\": \"admin\"\r\n}",
+					"raw": "{\r\n    \"name\": \"user\",\r\n    \"email\": \"user2@hotmail.com\",\r\n    \"password\": \"Hello world$123\",\r\n    \"token\": \"123456\",\r\n    \"phones\": [\r\n            {\r\n            \"number\": \"311111223\",\r\n            \"cityCode\": \"1\",\r\n            \"countryCode\": \"COP\",\r\n            \"createdAt\": \"2012-04-23\",\r\n            \"createdBy\": \"admin\",\r\n            \"modifiedAt\": \"null\",\r\n            \"modifiedBy\": null\r\n            }\r\n    ],\r\n    \"isActive\": true,\r\n    \"createdAt\": \"2012-04-23T18:25:43.511Z\",\r\n    \"createdBy\": \"admin\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -57,7 +57,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "    {\r\n        \"id\": \"fbc5cbf1-b893-475c-8f37-ca0580b77d52\",\r\n        \"name\": \"user\",\r\n        \"email\": \"user@email.com\",\r\n        \"password\": \"123456\",\r\n        \"lastLogin\": null,\r\n        \"token\": \"123456\",\r\n        \"createdAt\": \"2012-04-23\",\r\n        \"createdBy\": \"admin\",\r\n        \"modifiedAt\": null,\r\n        \"modifiedBy\": null,\r\n        \"phones\": [\r\n            {\r\n            \"id\": \"fbc5cbf1-b893-475c-8f37-ca0580b77d53\",\r\n            \"number\": \"311111223\",\r\n            \"cityCode\": \"1\",\r\n            \"countryCode\": \"COP\",\r\n            \"createdAt\": \"2012-04-23\",\r\n            \"createdBy\": \"admin\",\r\n            \"modifiedAt\": \"null\",\r\n            \"modifiedBy\": null\r\n            }\r\n        ],\r\n        \"active\": false\r\n    }",
+					"raw": "{\r\n    \"name\": \"user000\",\r\n    \"email\": \"user2@hotmail.com\",\r\n    \"password\": \"Hello world$123\",\r\n    \"token\": \"123456\",\r\n    \"phones\": [\r\n            {\r\n            \"number\": \"3111112666\",\r\n            \"cityCode\": \"1\",\r\n            \"countryCode\": \"COP\",\r\n            \"createdAt\": \"2012-04-23\",\r\n            \"createdBy\": \"admin\",\r\n            \"modifiedAt\": \"null\",\r\n            \"modifiedBy\": null\r\n            }\r\n    ],\r\n    \"isActive\": true,\r\n    \"createdAt\": \"2012-04-23T18:25:43.511Z\",\r\n    \"createdBy\": \"admin\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -65,14 +65,14 @@
 					}
 				},
 				"url": {
-					"raw": "localhost:8080/users/93cfd2a7-e3a4-490c-a5ab-24c9aa59172d",
+					"raw": "localhost:8080/users/31cca778-ef5c-40ac-91ca-d3d4b6fcc8ee",
 					"host": [
 						"localhost"
 					],
 					"port": "8080",
 					"path": [
 						"users",
-						"93cfd2a7-e3a4-490c-a5ab-24c9aa59172d"
+						"31cca778-ef5c-40ac-91ca-d3d4b6fcc8ee"
 					]
 				}
 			},
@@ -93,14 +93,14 @@
 					}
 				},
 				"url": {
-					"raw": "localhost:8080/users/93cfd2a7-e3a4-490c-a5ab-24c9aa59172d",
+					"raw": "localhost:8080/users/86178d4b-3324-4408-9e24-d0c434a1df75",
 					"host": [
 						"localhost"
 					],
 					"port": "8080",
 					"path": [
 						"users",
-						"93cfd2a7-e3a4-490c-a5ab-24c9aa59172d"
+						"86178d4b-3324-4408-9e24-d0c434a1df75"
 					]
 				}
 			},

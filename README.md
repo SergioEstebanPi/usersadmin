@@ -3,7 +3,7 @@
 
 #
 ### Requisitos:
-	Git, Java 1.8, SpringBoot, Maven
+	Git, Java 1.8, SpringBoot, Maven or Gradle
 
 #
 ### Repositorio Github: 
@@ -18,17 +18,50 @@ http://localhost:8080/swagger-ui.html#!/user45controller/createUserUsingPOST
 [users.postman_collection.json](users.postman_collection.json)
 
 #
-### Build the project using 
+
+# MAVEN commands
+### 1. Build the project using 
     mvn clean install
-### Run the unit tests 
+### 2. Run the unit tests 
     mvn test
-### Run using
+### 3. Run using
     mvn spring-boot:run
+
+#### or
+
+    java -jar .\target\usersadmin-0.0.1-SNAPSHOT.jar
+
+The web application is accessible via [localhost:8080](http://localhost:8080/)
+
+#
+# GRADLE commands
+### 1. Build the project using 
+    gradle build
+### 2. Run the unit tests 
+    gradle test
+### 3. Run using
+    gradle bootRun
+
+#### or
+    
+    java -jar build\libs\usersadmin-0.0.1-SNAPSHOT.jar
+
 The web application is accessible via [localhost:8080](http://localhost:8080/)
 
 #
 
-### Diagrama:
+# Inmmemory database access and credentials
+
+## URL
+The web H2 database is accessible via [http://localhost:8080/h2-console/](http://localhost:8080/h2-console/)
+
+## Credentials
+    username: h2
+    password: h2
+
+
+
+# Application diagram:
 ![alt text](diagrama.png)
 
 ## Usage examples using CURL
